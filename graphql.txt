@@ -1,0 +1,63 @@
+# for get all the request
+# {
+#   allAuthors {
+#     id
+#     name
+#   }
+# }
+
+# Create a new author 
+# mutation {
+#   createAuthor(name: "Vivek Bhajpai") {
+#     author {
+#       id
+#       name
+#     }
+#   }
+# }
+
+# Create a book for an spacfic author
+# mutation {
+#   createBook(title: "Rajesh Mashala", authorId: 1) {
+#     book {
+#       id
+#       title
+#     }
+#   }
+# }
+
+# Get All Books:
+# {
+#   allBooks {
+#     id
+#     title
+#     author {
+#       name
+#     }
+#   }
+# }
+
+
+# Get All Authors:
+# {
+#   allAuthors {
+#     id
+#     name
+#   }
+# }
+
+# Get a Specific Author by ID:
+# {
+#   authorById(id: 1) {
+#     id
+#     name
+#   }
+# }
+
+# Search for Authors by Name
+# {
+#   searchAuthors(name: "prabhat") {
+#     id
+#     name
+#   }
+# }
